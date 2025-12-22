@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="service.css" rel="stylesheet">
+    <link href="whats.css" rel="stylesheet">
+
+    <title>Services</title>
+</head>
+<body>
+
+    <style>
+  :root{
+  --gold:#c9a24d;
+  --dark:#0e0e0e;
+  --card:#151515;
+  --text:#cfcfcf;
+}
+
+body{
+  background-color: white;
+  /* background:var(--dark); */
+  color:var(--text);
+}
+
+/* .navbar{
+  background:rgba(0,0,0,.9)!important;
+  backdrop-filter:blur(10px);
+}
+.nav-link{
+    color:#ddd;
+
+  margin-left:15px;
+  position:relative;
+}
+.nav-link::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:2px;
+  background:var(--gold);
+  left:0;
+  bottom:-3px;
+  transition:.4s;
+}
+.nav-link:hover::after{width:100%} */
+
+h1,h2,h3,h5{
+  font-family:'Playfair Display',serif;
+  color:#c9a24d;
+}
+.section-heading::after{
+  content:"";
+  width:90px;
+  height:3px;
+  background:var(--gold);
+  display:block;
+  margin:15px auto 0;
+}
+
+.service-box{
+  background:linear-gradient(145deg,#181818,#101010);
+  border-radius:22px;
+  padding:40px;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  margin-bottom:80px;
+  transition:.1s;
+}
+.service-box:hover{
+  transform:translateY(-10px);
+  box-shadow:0 40px 100px rgba(201,162,77,.2);
+}
+
+.service-img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:18px;
+  transition:.1s;
+}
+.service-box:hover .service-img{
+  transform:scale(1.08);
+  padding-right: 10px;
+}
+
+.badge-custom{
+  background:var(--gold);
+  color:#000;
+  padding:6px 16px;
+  border-radius:25px;
+  font-size:.75rem;
+  letter-spacing:1px;
+}
+
+
+
+
+@media(max-width:768px){
+  .service-img{height:240px}
+  h1{font-size:2.2rem}
+}
+
+@media (max-width: 576px) {
+.badge-custom{
+  margin-top: 20px;
+ 
+}
+}
+  </style>
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow"> -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+     style="background-color: rgb(255, 255, 255);">
+
+    <div class="container">
+    <a class="navbar-brand d-flex pt-0 pb-0" href="index.html">
+      <img class="pt-0 pb-0" src="logo1.png" width="200" style="height: 70px;" >
+      <!-- <span class="fs-4">Live Design and interior</span> -->
+    </a>
+  <a href="realestate.html" class="nav-link btn p-2 text-white btn-realestate" style="background-color: #c9a24d;">
+  Real Estate
+</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon" style="color: black;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <!-- <li class="nav-item"><a class="nav-link btn bg-black text-white" href="realestate.html" >Real-Estate</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--whatsapp-->
+ <a href="https://wa.me/+918840918823" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+<div class="container text-black" style="padding-top:120px;">
+  <h1 class="text-center mb-4 fw-bold playfair" style="font-family: 'Playfair Display', serif;">Service</h1>
+  <p class="fs-5" data-aos="zoom-in" data-aos-delay="800">
+Our Commercial Interior Design service focuses on creating functional, stylish, and brand-aligned environments for businesses. From office spaces and retail stores to cafés and hospitality venues, we design interiors that enhance productivity, improve customer experience, and strengthen brand identity.
+</p>
+
+<p class="fs-5" data-aos="zoom-in" data-aos-delay="800">
+This service is designed for business owners, startups, developers, and corporate teams who want to elevate their workspace or customer-facing environment. Whether launching a new business or renovating an existing one, we provide tailored solutions that support your goals.
+</p>
+</div>
+
+
+
+<div class="container">
+
+
+
+
+
+  <h3 class="section-title" >Services We Provided</h3>
+<div class="container">
+
+
+
+  
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800"  src="images/apartmenthome.jpg" 
+      alt="Modern Living Room" class="service-img"></div>
+            <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">RESIDENTIAL</span>
+
+      <h3  data-aos="zoom-out">Homes & Apartments</h3>
+      <p data-aos="zoom-in" data-aos-delay="800" >
+         Enhance your home or apartment with our professional interior design services tailored to create stylish, functional, and comfortable 
+         living spaces. As experienced home interior designers, we specialize in modern apartment interior design, complete home makeovers,
+          modular kitchens, living room interiors, bedroom design, and space-saving solutions. Our team focuses on smart layouts, premium materials, 
+          elegant lighting, and customized furniture to maximize space and reflect your personal style. Whether you need luxury home interiors or 
+          budget-friendly apartment design, we deliver high-quality craftsmanship, timely execution, and stunning results—making us a trusted choice
+           for residential interior design services that truly transform your home.
+      </p>
+    
+    </div>
+  </div>
+  </div>
+
+
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/officeservice.jpg"
+       alt="Minimalist Bedroom" class="service-img">
+    </div>
+    <div class="col-md-6">
+            <span class="badge-custom mb-1 d-inline-block">Commercial Design</span>
+
+      <h3 data-aos="zoom-in" data-aos-delay="800" >Offices & Retail
+</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+              Create impactful, functional, and professional spaces with our office and retail interior design services tailored to enhance productivity and customer experience. We specialize in modern office interiors,
+               corporate workspace design, and retail store interiors that align with your brand identity and business goals. From smart space planning, ergonomic furniture, and efficient lighting to attractive storefronts,
+                display units, and seamless layouts, our designs are crafted to maximize efficiency and visual appeal. Whether it’s a corporate office, coworking space, showroom, or retail outlet, we deliver custom interior 
+                solutions, premium finishes, and end-to-end execution—making us a trusted partner for commercial interior design services that drive growth and leave a lasting impression.
+      </p>
+    </div>
+  </div>
+  </div>
+
+
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/2d3d.webp"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">Design View </span>
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">2D & 3D</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+Bring your ideas to life with our professional 2D & 3D design services that provide a clear, realistic vision of your 
+interior space before execution. Our 2D layouts focus on precise space planning, furniture placement, electrical points, 
+and functional flow, ensuring maximum utilization of every area. With 3D interior designs, we create realistic visualizations
+ showcasing colors, textures, lighting, furniture, and finishes, helping you experience the look and feel of your space in advance. 
+ Ideal for homes, apartments, offices, and retail projects, our 2D & 3D interior design solutions eliminate guesswork, save time and cost, and ensure seamless execution with accurate, visually stunning results.
+</p>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800"  src="images/decorfinishes.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+            <span class="badge-custom mb-3 d-inline-block">Interior Styling</span>
+
+      
+      <h3 data-aos="zoom-in" data-aos="800">Decor & Finishing Touches</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+         Complete your space with our Decor & Finishing Touches services, designed to add character, elegance, and a refined final look to your interiors. 
+         We specialize in curated décor solutions including wall art, wallpapers, curtains and blinds, lighting fixtures, mirrors, soft furnishings, and
+          customized accessories that enhance the overall theme of your space. From subtle accents to bold statement pieces, every detail is thoughtfully 
+          selected to complement the design and elevate the ambiance. Perfect for homes, apartments, offices, and retail spaces, our interior décor and finishing 
+          services ensure a polished, stylish, and well-balanced space that feels complete and visually stunning.
+      </p>
+    </div>
+  </div>
+</div>
+
+ <div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/spaceplanning.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+              <span class="badge-custom mb-3 d-inline-block">Workplace & Retail Layout Planning</span>
+
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">Space Planning</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+Our Layout Optimization services are designed to make every space more functional, comfortable, and visually balanced. We carefully
+ plan floor layouts to improve movement, enhance usability, and ensure efficient placement of furniture, storage, and activity zones. By 
+ understanding your lifestyle or business needs, we create smart design solutions that maximize available space without compromising on 
+ aesthetics. Whether for homes, apartments, offices, or retail spaces, our approach transforms compact or complex areas into well-organized,
+  open, and practical environments. The result is a thoughtfully planned space that feels spacious, efficient, and perfectly suited for everyday
+   living or professional use.    </div>
+  </div>
+  </div>
+   
+    
+  
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/curtainswall.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">Soft Furnishings & Wall Finishes </span>
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">Curtains & Wallpaper Work</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+Our Curtains & Wallpaper services add style, warmth, and personality to your interiors with carefully selected designs and premium
+ finishes. We offer a wide range of curtains, blinds, and wallpapers to suit modern, classic, and contemporary themes. From light-filtering 
+ and blackout curtains to textured, patterned, and customized wallpapers, our solutions enhance privacy, comfort, and visual appeal. We help 
+ you choose the right colors, fabrics, and designs that complement your overall interior concept. Ideal for homes, apartments, offices, and retail
+  spaces, our curtain and wallpaper solutions create a refined, cohesive look, adding depth and elegance while transforming plain walls and windows into striking design elements.
+</p>
+    </div>
+  </div>
+  </div>
+
+
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/hvac.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">HVAC Services</span>
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">HVAC Works</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+  Our HVAC services provide complete heating, ventilation, and air conditioning solutions designed for comfort, efficiency, 
+  and reliable performance. We specialize in HVAC planning, installation, ducting, insulation, and system integration for homes,
+   apartments, offices, and commercial spaces. Our team ensures proper airflow, temperature control, and energy efficiency while
+    maintaining indoor air quality. From split and centralized air conditioning systems to ventilation solutions, we deliver
+     customized HVAC designs that align with your space and usage needs. With a focus on safety, compliance, and long-term performance, 
+     our HVAC services ensure a comfortable, well-ventilated environment with seamless operation and professional execution.
+</p>
+    </div>
+  </div>
+  </div>
+
+
+ <div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/fightingsystem.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">Fire System Works</span>
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">Fire Fighting System</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+Our Fire Fighting System services ensure safety, compliance, and complete fire protection for residential, commercial, and industrial 
+spaces. We design, supply, and install reliable fire safety solutions including fire hydrant systems, sprinklers, hose reels, fire
+ extinguishers, alarm systems, and smoke detection. Our team follows all statutory norms and safety standards to provide effective fire 
+ prevention and emergency response systems. From planning and layout to installation and testing, every aspect is handled with precision and
+  care. Whether for homes, apartments, offices, or retail spaces, our fire fighting solutions help protect lives and property by ensuring quick 
+  detection, controlled suppression, and dependable performance in case of emergencies.
+</p>
+    </div>
+  </div>
+  </div>
+
+  
+  <div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/painting.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">Paint</span>
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">Home/Commercial Painting</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+Our Home & Commercial Painting services deliver flawless finishes that enhance the look, durability, and value 
+of your space. We offer expert interior and exterior painting solutions for homes, apartments, offices, and
+ commercial properties using high-quality paints and advanced application techniques. From surface preparation
+  and color consultation to smooth finishing and final detailing, every step is handled with precision. Whether you 
+  prefer modern textures, elegant shades, or durable commercial coatings, we ensure long-lasting results with minimal
+   disruption. Our professional painting solutions add freshness, protection, and visual appeal, transforming your residential 
+   or commercial space into a clean, vibrant, and professionally finished environment.
+</p>
+    </div>
+  </div>
+  </div>
+
+<div class="service-box" data-aos="fade-up">
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <img data-aos="zoom-in" data-aos-delay="800" src="images/electrics.jpg"
+       alt="Luxury Dining Area" class="service-img">
+    </div>
+    <div class="col-md-6">
+      <span class="badge-custom mb-3 d-inline-block">Electrics works</span>
+      <h3 data-aos="zoom-in" data-aos-delay="800" style="font-family: 'Playfair Display', serif;">Electrics & Lighting works</h3>
+      <p data-aos="zoom-in" data-aos-delay="800">
+  Our Electrical & Lighting Works services provide safe, efficient, and well-planned electrical solutions for residential and commercial spaces. We handle complete electrical wiring, switchboards,
+   power points, and system upgrades with strict adherence to safety standards. Our lighting solutions include ambient, task,
+   and accent lighting designed to enhance functionality and elevate the overall look of your interiors. From LED recessed lights and decorative fixtures to 
+   energy-efficient lighting layouts, we ensure optimal illumination and seamless integration with your interior design. Suitable for homes, apartments, offices, 
+   and retail spaces, our electrical and lighting services deliver reliable performance, enhanced aesthetics, and long-term efficiency.
+</p>
+    </div>
+  </div>
+  </div>
+
+
+</div>
+</div>
+
+<footer id="contact" class="bg-black text-white pt-5 pb-0">
+  <div class="container-fluid pe-lg-5 ps-lg-5">
+
+    <div class="row gy-4">
+
+      <div class="col-12 col-md-6">
+        <h3 class="fw-bold mb-3" style="font-family:'Playfair Display',serif;
+  color:#c9a24d;">Live Design and Interiors</h3>
+        <p class="text-white mb-4" style="max-width: 400px;">
+          Creating beautiful, functional spaces that reflect your personality and enhance your lifestyle
+          through professional interior design services.
+        </p>
+
+        <div class="d-flex gap-3">
+           <a href="https://www.facebook.com/share/1A8R4kZsE5/" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/live_design_interior?igsh=ODk5aGl5a2RnbHJt" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+          
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h5 class="fw-semibold mb-3" style="font-family:'Playfair Display',serif;
+  color:#c9a24d;">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Gallary</a></li>
+          <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+           <li class="mb-2"><a href="realestate.html" class="text-white text-decoration-none">Real Estate</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-3">
+         <h5 class="fw-semibold mb-3" style="font-family:'Playfair Display',serif;
+  color:#c9a24d;">Contact Us</h5>
+        <ul class="list-unstyled">
+
+         <li class="d-flex mb-1">
+            <i class="fas fa-phone text-text-white me-3"></i>
+            <span class="text-white">+91 88409 18823</span>
+          </li>
+
+          <li class="d-flex mb-1">
+            <i class="fas fa-phone text-text-white me-3"></i>
+            <span class="text-white">+91 7905365962</span>
+          </li>
+
+          <li class="d-flex mb-1">
+            <i class="fas fa-envelope text-text-white me-3"></i>
+            <span class="text-white">livedesignandinterior@gmail.com</span>
+          </li>
+
+          <li class="d-flex mb-1">
+            <i class="fas fa-building text-text-white me-3"></i>
+            <span class="text-white">Tower C- 439 bhutani Alphathum sector-90</span>
+          </li>
+
+          <li class="d-flex mb-3">
+            <i class="fas fa-map-marker-alt text-text-white me-3"></i>
+            <span class="text-white">Noida</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+     <div class="border-top border-secondary mt-4 text-center py-3">
+      <p class="text-white mb-0">© <script>document.write(new Date().getFullYear())</script> Live Design And Interior. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+   AOS.init({
+  once: false,
+  startEvent: 'DOMContentLoaded',
+ 
+});
+</script>
+
+</body>
+</html>
+

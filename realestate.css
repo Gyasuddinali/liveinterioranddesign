@@ -1,0 +1,154 @@
+
+body, html {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+:root{
+  --gold: #d4af37;
+}
+
+.navbar{
+  background: rgb(0, 0, 0)!important;
+  /* backdrop-filter: blur(10px); */
+}
+
+
+
+
+.nav-link{
+  color: #ddd;
+  margin-left: 15px;
+  position: relative;
+  display: inline-block;
+  transition: color .3s ease, transform .3s ease;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  transition: width .4s ease;
+}
+
+.nav-link:hover{
+  color: var(--gold) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link:hover::after{
+  width: 120%;
+}
+
+.carousel-caption div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#h1style {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  
+    /* font-family: 'Dancing Script', cursive; font-size: 3rem; */
+color: #c9a24d;
+}
+
+.carousel-item {
+    height: 450px; 
+    margin-top: 30px;
+    padding-top: 30px;  
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 250px;
+    }
+}
+
+.carousel-item {
+    height: 600px; 
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.contact-wrapper {
+  min-height: 600px;
+}
+
+.contact-image {
+  height: 100%;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contForm {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+    color: white;
+}
+
+.btn:hover{
+color: black;
+background-color: #c9a24d;
+}
+
+.contForm{
+    border-radius: 10px;
+    background:repeating-radial-gradient(#3a3f58,#0a2342)
+}
+
