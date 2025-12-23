@@ -28,25 +28,32 @@
 
 
 <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow"> -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-     style="background-color: rgb(255, 255, 255);">
 
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(255, 255, 255);">
+  <div class="container">
     <a class="navbar-brand d-flex pt-0 pb-0" href="index.html">
-      <img class="pt-0 pb-0" src="logo1.png" width="300" style="height: 70px;" >
-      <!-- <span class="fs-4">Live Design and interior</span> -->
+      <img class="pt-0 pb-0" src="logo1.png" width="200" style="height: 70px;">
     </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+
+    <a href="realestate.html" class="nav-link btn p-2 m-0 text-white btn-realestate d-lg-none" style="background-color: #c9a24d;">
+      Real Estate
+    </a>
+
+    <button class="navbar-toggler m-0" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon" style="color: black;"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link btn bg-black text-white" href="realestate.html" >Real-Estate</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link btn text-black d-none d-lg-inline-block" href="realestate.html" style="border: #c9a24d 2px solid;">Real-Estate</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -295,6 +302,34 @@
       modal.show();
     });
   });
+
+
+
+  document.addEventListener('click', function (event) {
+    const navbar = document.getElementById('nav'); // your collapse div
+    const toggler = document.querySelector('.navbar-toggler');
+
+    // If navbar is open and click is outside of navbar and toggler
+    if (navbar.classList.contains('show') && 
+        !navbar.contains(event.target) && 
+        !toggler.contains(event.target)) {
+      new bootstrap.Collapse(navbar).hide(); // close the navbar
+    }
+  });
+
+  // Optional: close navbar when clicking a link inside it (for better UX)
+  document.querySelectorAll('#nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbar = document.getElementById('nav');
+      if (navbar.classList.contains('show')) {
+        new bootstrap.Collapse(navbar).hide();
+      }
+    });
+  });
+
+
+
+
 
 </script>
 </body>
