@@ -23,7 +23,6 @@
       width: 35px;
       height: 35px;
     }
-
-    .btnreal:hover{
-color: white;
-    }
+.btn-realestate:hover{
+color: black;
+}

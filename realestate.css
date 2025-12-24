@@ -136,16 +136,21 @@ color: #c9a24d;
 
 
 
-
+.btn1:hover{
+  color: #c9a24d;
+}
 
 .btn{
     color: white;
 }
 
+
 .btn:hover{
-color: black !important;
+color: black;
 /* background-color: #c9a24d; */
 }
+
+
 
 .contForm{
     border-radius: 10px;
