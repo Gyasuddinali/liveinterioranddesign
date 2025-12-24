@@ -74,8 +74,8 @@
     </button>
 
     <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <ul class="navbar-nav ms-auto" style="font-family: playfair display bold; font-size: large;">
+        <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -215,7 +215,7 @@
       <div class="col-lg-6" data-aos="fade-left">
         <h3 class="playfair mb-3" style="color:#c9a24d;">We Create Timeless & Elegant Interiors</h3>
         <p class="mb-4 text-black">
-          At <strong>Live Design & Interior,</strong>we transform spaces into reflections 
+          At <strong>Live Design & Interior,</strong> we transform spaces into reflections 
           of your personality and lifestyle. Our team combines creativity, functionality, 
           and innovation to deliver interiors that are not only beautiful but also purposeful.
           From concept to completion, we bring your vision to life with attention to detail and 
@@ -684,7 +684,7 @@ Great team and Quality work at Live Design & Interior. Kudos!            </p>
 
           <li class="d-flex mb-1">
             <i class="fas fa-envelope text-text-white me-3"></i>
-            <span class="text-white">livedesignandinterior@gmail.com</span>
+            <span class="text-white">info@livedesigns.in</span>
           </li>
 
           <li class="d-flex mb-1">
@@ -702,7 +702,7 @@ Great team and Quality work at Live Design & Interior. Kudos!            </p>
     </div>
 
     <div class="border-top border-secondary mt-4 text-center py-3">
-      <p class="text-white mb-0">© <script>document.write(new Date().getFullYear())</script> Live Design And Interior. All rights reserved.</p>
+      <p class="text-white mb-0">© <script>document.write(new Date().getFullYear())</script> Live Design & Interior. All rights reserved.</p>
     </div>
 
   </div>
@@ -744,7 +744,8 @@ AOS.init();
     const navbar = document.getElementById('nav'); // your collapse div
     const toggler = document.querySelector('.navbar-toggler');
 
-    // If navbar is open and click is outside of navbar and toggler
+
+
     if (navbar.classList.contains('show') && 
         !navbar.contains(event.target) && 
         !toggler.contains(event.target)) {
@@ -752,7 +753,8 @@ AOS.init();
     }
   });
 
-  // Optional: close navbar when clicking a link inside it (for better UX)
+
+
   document.querySelectorAll('#nav .nav-link').forEach(link => {
     link.addEventListener('click', () => {
       const navbar = document.getElementById('nav');
